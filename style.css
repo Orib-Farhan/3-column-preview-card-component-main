@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Lexend Deca";
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 400px;
+    max-width: 800px;
+    min-width: 560px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    border-radius: .5rem;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.big {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 2rem;
+}
+
+.small {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.8rem;
+    line-height: 150%;
+}
+.button {
+    height: 35px;
+    background-color: hsl(0, 0%, 95%);
+    width: 60%;
+    min-width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    border: 0.15rem hsl(0, 0%, 95%) solid;
+}
+
+.one {
+    color: hsl(31, 77%, 52%);
+}
+
+.two {
+    color: hsl(184, 100%, 22%);
+}
+
+.three {
+    color: hsl(179, 100%, 13%);
+}
+
+
+.button:hover {
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+@media (max-width:599px) {
+    .container {
+        height: 1050px;
+        max-width: 800px;
+        min-width: 290px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        border-radius: .5rem;
+        overflow: hidden;
+
+    }
+    .card {
+        height: 350px;
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+}
